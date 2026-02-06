@@ -1,0 +1,6 @@
+spring:
+	application:
+		name: orders-service
+	h2:
+		console:
+            enabled: true
