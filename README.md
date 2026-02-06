@@ -1,2 +1,2 @@
 ## orders API
-POST/ orders create a new order
+POST(Controller)/ orders create a new order
