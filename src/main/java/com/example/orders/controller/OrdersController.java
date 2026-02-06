@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/orders")
 public class OrdersController {
 	
-	@PostMapping("/create")
+	@PostMapping("/createorder")
 	public String createOrders() {
 		return "order created";
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("/findorderbyid/{id}")
 	public ResponseEntity<String> getOrder(@PathVariable String id) {
 		if(id==null ||id.trim().isEmpty()) {
 			return ResponseEntity.notFound().build();
